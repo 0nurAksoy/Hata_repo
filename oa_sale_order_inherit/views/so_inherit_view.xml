@@ -6,10 +6,10 @@
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="project.so_ihnerit_form"></field>
         <field name="arch" type="xml">
-            <field name="source_id" position="after">
+            <field name="medium_id" position="after">
                 <field name="proje" string="Proje"/>
             </field>
-            <field name="proje" position="after">
+            <field name="source_id" position="after">
                 <field name="task" string="Görev"/>
             </field>
         </field>
