@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="so_inherit_form" model="ir.ui.view">
+        <field name="name">so.inherit.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="project.so_ihnerit_form"></field>
+        <field name="arch" type="xml">
+            <field name="payment_term_id" position="after">
+                <field name="proje" string="Proje"/>
+            </field>
+            <field name="proje" position="after">
+                <field name="task" string="Görev"/>
+            </field>
+        </field>
+    </record>
+</odoo>
