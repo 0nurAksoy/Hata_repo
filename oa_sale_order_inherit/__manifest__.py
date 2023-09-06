@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Sale Order İnheritance',
+    'name': 'Sale Order Inheritance',
     'version': '1.0',
     'category': '',
     'author': 'Onur Aksoy',
