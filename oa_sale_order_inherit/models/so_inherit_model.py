@@ -10,3 +10,7 @@ class SaleOrderInheritance(models.Model):
     # task = fields.Many2one(comodel_name='project.task', ondelete='cascade')
 
     test = fields.Char(string='test', ondelete='cascade')
+    test2 = fields.Many2many(
+        'sale.order', 'field_deneme',
+        'field_name', 'field_name2',
+        string='Test2')
