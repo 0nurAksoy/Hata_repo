@@ -8,8 +8,7 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='invoice_status']"
                    position="after">
-                <field name="proje" string="Proje"/>
-                <field name="task" string="Görev"/>
+                <field name="test" string="test"/>
             </xpath>
         </field>
     </record>
