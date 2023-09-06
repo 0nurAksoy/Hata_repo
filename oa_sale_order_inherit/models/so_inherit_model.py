@@ -11,6 +11,6 @@ class SaleOrderInheritance(models.Model):
 
     test = fields.Char(string='test', ondelete='cascade')
     test2 = fields.Many2many(
-        'sale.order', 'field_deneme',
+        'sale.order.inherit.user_ids', 'field_deneme',
         'field_name', 'field_name2',
         string='Test2')
