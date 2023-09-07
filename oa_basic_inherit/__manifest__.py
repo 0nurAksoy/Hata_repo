@@ -4,7 +4,6 @@
     'version': '1.0',
     'category': '',
     'author': 'Onur Aksoy',
-    'sequence': -140,
     'summary': ' Sale Order Inheritance Test ',
     'description': """ Sale Order Inheritance Test """,
     'depends': ['sale'],
@@ -12,7 +11,4 @@
         'views/basic_inherit_view.xml',
     ],
     'demo': [],
-    'application': True,
-    'auto_install': False,
-    'license': 'LGPL-3',
 }
