@@ -6,11 +6,10 @@ class SaleOrderInheritance(models.Model):
     _inherit = ['sale.order']
     _description = "Sale Order Inheritance"
 
-    # proje = fields.Many2one(comodel_name='project.project', ondelete='cascade')
-    # task = fields.Many2one(comodel_name='project.task', ondelete='cascade')
+    proje = fields.Many2one(comodel_name='project.project', ondelete='cascade')
+    task = fields.Many2one(comodel_name='project.task', ondelete='cascade')
 
-    test = fields.Char(string='test', ondelete='cascade')
-    test2 = fields.Many2many(
-        'sale.order.inherit.user_ids', 'field_deneme',
-        'field_name', 'field_name2',
+    user_ids = fields.Many2many(
+        'project.task.user', 'task_user_rel',
+        'task_id', 'user_id',
         string='Test2')

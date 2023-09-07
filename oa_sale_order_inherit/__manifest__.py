@@ -7,7 +7,7 @@
     'sequence': -130,
     'summary': ' Sale Order İnheritance Test ',
     'description': """ Sale Order İnheritance Test """,
-    'depends': ['sale'],
+    'depends': ['sale', 'project'],
     'data':[
         'so_inherit_view.xml',
     ],
