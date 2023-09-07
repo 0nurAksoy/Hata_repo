@@ -14,6 +14,6 @@ class SaleOrderInheritance(models.Model):
         'task_id', 'user_id',
         string='User Ids')
     transaction_ids = fields.Many2many(
-        'sale.order.transaction', 'transaction_user_rel',
-        'transaction_id', 'transaction_id',
+        'sale.order.transaction', 'order_user_rel',
+        'order_id', 'transaction_id',
         string='Transaction Ids')
