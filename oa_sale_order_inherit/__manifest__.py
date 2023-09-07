@@ -9,7 +9,7 @@
     'description': """ Sale Order İnheritance Test """,
     'depends': ['sale', 'project'],
     'data':[
-        'so_inherit_view.xml',
+        'views/so_inherit_view.xml',
     ],
     'demo': [],
     'application': True,
