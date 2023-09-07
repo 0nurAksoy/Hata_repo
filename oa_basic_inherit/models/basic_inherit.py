@@ -2,7 +2,7 @@
 from odoo import api, fields, models
 
 class BasicInheritanceTest(models.Model):
-    _inherit = ['sale.order']
+    _inherit = 'sale.order'
     _description = "Basic Inheritance"
 
     proje = fields.Selection([('a','A'),('b','B'),('c','C')], string='Seçiniz')
