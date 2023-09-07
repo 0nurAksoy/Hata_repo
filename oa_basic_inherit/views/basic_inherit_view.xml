@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="basic_inherit_test" model="ir.ui.view">
+        <field name="name">basic.inherit.test</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"></field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='invoice_status']"
+                   position="after">
+                <field name="write_date"/>
+                <field name="write_uid"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
