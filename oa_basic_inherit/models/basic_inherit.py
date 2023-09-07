@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from odoo import api, fields, models
 
-class BasicInheritanceTest(models.Model):
+class SaleOrder(models.Model):
     _inherit = 'sale.order'
     _description = "Basic Inheritance"
 
