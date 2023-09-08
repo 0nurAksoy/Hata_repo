@@ -5,8 +5,8 @@
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='payment_term_id']" position="after">
-                <field name="project_choose_id" string="Proje"/>
-                <field name="task_choose_id" string="Görev"/>
+                <field name="project_id"/>
+                <field name="task_id"/>
             </xpath>
         </field>
     </record>
