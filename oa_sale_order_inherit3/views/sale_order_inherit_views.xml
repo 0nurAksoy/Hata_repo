@@ -7,8 +7,7 @@
             <xpath expr="//field[@name='payment_term_id']" position="after">
                 <field name="project_choose_id"/>
                 <field name="task_choose_id"
-                       attrs="{'invisible': [('project_choose_id', '=', False)]}"
-                       related="project.task.name"/>
+                attrs="{'invisible': [('project_choose_id', '=', False)]}"/>
             </xpath>
         </field>
     </record>

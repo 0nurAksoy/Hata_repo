@@ -5,4 +5,5 @@ class SaleOrder(models.Model):
     _inherit = "sale.order"
 
     project_choose_id = fields.Many2one(comodel_name="project.project", string="Proje")
-    task_choose_id = fields.Many2one(comodel_name="project.task", string="Görev")
+    task_choose_id = fields.Many2one(comodel_name="project.task",
+                       related="project.task.name" string="Görev")
