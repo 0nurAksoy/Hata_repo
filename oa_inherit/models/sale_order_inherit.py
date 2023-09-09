@@ -6,5 +6,5 @@ class SaleOrder(models.Model):
 
     project_choose_id = fields.Many2one(comodel_name="project.project", string="Proje")
     task_choose_id = fields.Many2one(comodel_name="project.task",  string="Görev",
-                       domain="[('project_choose_id', '=', project_choose_id)]")
+                       domain="[('project.task.name', '=', project.task.name)]")
 
